@@ -1,4 +1,4 @@
-const WEBURL = "http://52.53.255.123:3004/api/v1";
+const WEBURL = "";
 
 // message between background, applicationForm and content script
 const MESSEGE_TYPE = "MESSEGE_TYPE";

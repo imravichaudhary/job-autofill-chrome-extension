@@ -103,18 +103,18 @@ function generateUserId() {
 
 
 function sendData(method, data) {
-    var x = new XMLHttpRequest();
-    var url = WEBURL+ "/" + method;
+    // var x = new XMLHttpRequest();
+    // var url = WEBURL+ "/" + method;
     
-    x.open('POST', url, true);
-    x.onload = function() {
-       // alert(x.responseText);
-    };
+    // x.open('POST', url, true);
+    // x.onload = function() {
+    //    // alert(x.responseText);
+    // };
         
-    x.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    // x.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
     
-    var jsonStr = JSON.stringify(data);
-    x.send(jsonStr);
+    // var jsonStr = JSON.stringify(data);
+    // x.send(jsonStr);
 }
 
 
