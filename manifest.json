@@ -52,14 +52,10 @@
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "jobfill16.png",
-      "48": "jobfill48.png",
       "128": "jobfill128.png"
     }
   },
   "icons": {
-    "16": "jobfill16.png",
-    "48": "jobfill48.png",
     "128": "jobfill128.png"
   },
   "options_page": "index.html"

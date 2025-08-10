@@ -1,27 +1,22 @@
-<html lang = "en-US">
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
   <title>JobFill Pro Profile</title>
-  <head>
-    <style>
-      button {
-        height: 30px;
-        width: 100px;
-        outline: none;
-      }
-    </style>
-    <script src="config.js"></script>
-    <script src="resumePopup.js"></script>
-  </head>
-  <body>
+  <link rel="stylesheet" href="configStyle.css">
+  <script src="config.js"></script>
+  <script src="resumePopup.js"></script>
+</head>
+<body class="body">
   <h3>&nbsp;Edit Profile</h3>
   <form name="profile" id="profile" class="form-horizontal">
     <fieldset>
-    <label for="fname">First Name</label><br>
+    <label for="fname" class="fname">First Name:</label><br>
     <input type="text" id="fname" name="fname" value=""><br>
-    <label for="lname">Last Name</label><br>
+    <label for="lname">Last Name:</label><br>
     <input type="text" id="lname" name="lname" value=""><br>
-    <label for="email">Email</label><br>
+    <label for="email">Email:</label><br>
     <input type="text" id="email" name="email" value=""><br>
-    <label for="phone">Phone</label><br>
+    <label for="phone">Phone:</label><br>
     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" value=""><br>
     <label for="linkedin">LinkedIn</label><br>
     <input type="url" id="linkedin" name="linkedin" value=""><br>
@@ -88,21 +83,22 @@
       <option value="Wyoming">Wyoming</option>
     </select>
   </div>
-    <label for="zip_code">ZIP Code</label><br>
+    <label for="zip_code">ZIP Code:</label><br>
     <input type="text" id="zip_code" name="zip_code" value=""><br>
-    <label for="university">University</label><br>
+    <label for="university">University:</label><br>
     <input type="text" id="university" name="university" value=""><br>
-    <label for="uni_city">University City</label><br>
+    <label for="uni_city">University City:</label><br>
     <input type="text" id="uni_city" name="uni_city" value=""><br>
-    <label for="gpa">GPA</label><br>
+    <label for="gpa">GPA:</label><br>
     <input type="text" id="gpa" name="gpa" value=""><br>
-    <label class="col-md-4 control-label" for="selectdegree">Degree</label>
+    <label class="col-md-4 control-label" for="selectdegree">Degree:</label>
     <div class="col-md-4">
     <select id="selectdegree" name="selectbasic" class="form-control">
       <option value="High School">High School</option>
       <option value="Associate">Associate's Degree</option>
       <option value="Bachelor">Bachelor's Degree</option>
       <option value="Master">Master's Degree</option>
+      <option value="Ph">PhD</option>
       <option value="Ph">PhD</option>
     </select>
     </div>
