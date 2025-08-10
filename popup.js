@@ -2,19 +2,26 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('edit_profile').onclick = function() {
         chrome.runtime.openOptionsPage();
     };
-    document.getElementById('autofill').onclick = function() {
-      chrome.tabs.query({active: true, currentWindow: true},function(tabs) {
-        chrome.tabs.executeScript(tabs[0].id, {file: 'content.js'}, function() {
-          chrome.tabs.sendMessage(tabs[0].id, {message: "hello"});
-        });
-    });
+    document.getElementById('autofill').onclick = async function() {
+      const [tab] = await chrome.tabs.query({active: true, currentWindow: true});
+      await chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        files: ['content.js']
+      });
+      chrome.tabs.sendMessage(tab.id, {message: "hello"});
   }
-    var y = document.getElementById("support_page");
-    y.addEventListener("click", openIndex);
+    // Optional: Add review link handler if element exists
+    var supportPage = document.getElementById("support_page");
+    if (supportPage) {
+        supportPage.addEventListener("click", openIndex);
+    }
 });
 
 function openIndex() {
-// chrome.tabs.create({active: true, url: "https://chrome.google.com/webstore/detail/kumquat/mkjkimankkfhefaabddppkhbobffaadp"});
+    chrome.tabs.create({
+        active: true, 
+        url: "https://chrome.google.com/webstore/detail/jobfill-pro/majkimankkfhefaabddppkhbobffaadp"
+    });
 }
 
 var _gaq = _gaq || [];

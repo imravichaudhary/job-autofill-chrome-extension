@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "resume": {
+      "type": "object",
+      "description": "Resume data"
+    },
+    "profile": {
+      "type": "object",
+      "description": "User profile data"
+    },
+    "applyUserId": {
+      "type": "string",
+      "description": "User ID for applying"
+    }
+  }
+}

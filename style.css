@@ -1,4 +1,4 @@
-#kumquatOverlay {
+#jobfillOverlay {
     box-sizing: content-box;
     position: fixed;
     width: 20% !important;
@@ -11,7 +11,7 @@
     background-color: rgb(255, 255, 255, 80%);
 }
 
-#kumquatButton {
+#jobfillButton {
     position: relative !important;
     width: 70% !important;
     top: 20% !important;
@@ -33,7 +33,7 @@
     text-align: center;
 }
 
-#kumquatButton:hover {
+#jobfillButton:hover {
     color:white;
     background: rgba(255, 125, 32, 0.93);
     cursor: pointer;
@@ -71,7 +71,7 @@
     color:darkgray;
 }
 
-#kumquatTree {
+#jobfillTree {
     position: relative !important;
     top: 8% !important;
 }
